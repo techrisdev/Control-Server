@@ -1,0 +1,4 @@
+set curVolume to get volume settings
+set volume with output muted
+
+tell application "ScreenSaverEngine" to activate

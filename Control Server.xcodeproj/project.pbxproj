@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C4AC0A62BCC6C070012BAA5 /* VolumeDownAction.script in Resources */ = {isa = PBXBuildFile; fileRef = 6C4AC0A42BCC6C070012BAA5 /* VolumeDownAction.script */; };
+		6C4AC0A72BCC6C070012BAA5 /* SkipAction.script in Resources */ = {isa = PBXBuildFile; fileRef = 6C4AC0A52BCC6C070012BAA5 /* SkipAction.script */; };
+		6C550B112BC2AB8A004E9715 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C550B102BC2AB8A004E9715 /* NotificationExtension.swift */; };
+		6C550B152BC2B10D004E9715 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C550B142BC2B10D004E9715 /* Helper.swift */; };
+		6C550B182BC2B55E004E9715 /* CloseAction.script in Resources */ = {isa = PBXBuildFile; fileRef = 6C550B162BC2B4C3004E9715 /* CloseAction.script */; };
+		6C550B1A2BC2B623004E9715 /* OpenAction.script in Resources */ = {isa = PBXBuildFile; fileRef = 6C550B192BC2B623004E9715 /* OpenAction.script */; };
 		6C9EA7112BB609FF00A8B14B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9EA7102BB609FF00A8B14B /* AppDelegate.swift */; };
-		6C9EA7132BB609FF00A8B14B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9EA7122BB609FF00A8B14B /* ViewController.swift */; };
-		6C9EA7152BB60A0100A8B14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9EA7142BB60A0100A8B14B /* Assets.xcassets */; };
-		6C9EA7182BB60A0100A8B14B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C9EA7172BB60A0100A8B14B /* Base */; };
+		6C9EA7202BB60B8500A8B14B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9EA71F2BB60B8500A8B14B /* main.swift */; };
+		6C9EA7222BB60BC100A8B14B /* Reciever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9EA7212BB60BC100A8B14B /* Reciever.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C4AC0A42BCC6C070012BAA5 /* VolumeDownAction.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VolumeDownAction.script; sourceTree = "<group>"; };
+		6C4AC0A52BCC6C070012BAA5 /* SkipAction.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkipAction.script; sourceTree = "<group>"; };
+		6C550B102BC2AB8A004E9715 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		6C550B142BC2B10D004E9715 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		6C550B162BC2B4C3004E9715 /* CloseAction.script */ = {isa = PBXFileReference; explicitFileType = text; path = CloseAction.script; sourceTree = "<group>"; };
+		6C550B192BC2B623004E9715 /* OpenAction.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenAction.script; sourceTree = "<group>"; };
 		6C9EA70D2BB609FF00A8B14B /* Control Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Control Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9EA7102BB609FF00A8B14B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C9EA7122BB609FF00A8B14B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6C9EA7142BB60A0100A8B14B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6C9EA7172BB60A0100A8B14B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6C9EA7192BB60A0100A8B14B /* Control_Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Control_Server.entitlements; sourceTree = "<group>"; };
+		6C9EA71F2BB60B8500A8B14B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6C9EA7212BB60BC100A8B14B /* Reciever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reciever.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C550B1B2BC2B74D004E9715 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6C4AC0A52BCC6C070012BAA5 /* SkipAction.script */,
+				6C4AC0A42BCC6C070012BAA5 /* VolumeDownAction.script */,
+				6C550B162BC2B4C3004E9715 /* CloseAction.script */,
+				6C550B192BC2B623004E9715 /* OpenAction.script */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		6C9EA7042BB609FF00A8B14B = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +72,12 @@
 		6C9EA70F2BB609FF00A8B14B /* Control Server */ = {
 			isa = PBXGroup;
 			children = (
+				6C9EA71F2BB60B8500A8B14B /* main.swift */,
 				6C9EA7102BB609FF00A8B14B /* AppDelegate.swift */,
-				6C9EA7122BB609FF00A8B14B /* ViewController.swift */,
-				6C9EA7142BB60A0100A8B14B /* Assets.xcassets */,
-				6C9EA7162BB60A0100A8B14B /* Main.storyboard */,
-				6C9EA7192BB60A0100A8B14B /* Control_Server.entitlements */,
+				6C550B1B2BC2B74D004E9715 /* Scripts */,
+				6C9EA7212BB60BC100A8B14B /* Reciever.swift */,
+				6C550B142BC2B10D004E9715 /* Helper.swift */,
+				6C550B102BC2AB8A004E9715 /* NotificationExtension.swift */,
 			);
 			path = "Control Server";
 			sourceTree = "<group>";
@@ -119,8 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C9EA7152BB60A0100A8B14B /* Assets.xcassets in Resources */,
-				6C9EA7182BB60A0100A8B14B /* Base in Resources */,
+				6C4AC0A62BCC6C070012BAA5 /* VolumeDownAction.script in Resources */,
+				6C4AC0A72BCC6C070012BAA5 /* SkipAction.script in Resources */,
+				6C550B182BC2B55E004E9715 /* CloseAction.script in Resources */,
+				6C550B1A2BC2B623004E9715 /* OpenAction.script in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,23 +154,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C9EA7132BB609FF00A8B14B /* ViewController.swift in Sources */,
+				6C9EA7202BB60B8500A8B14B /* main.swift in Sources */,
+				6C9EA7222BB60BC100A8B14B /* Reciever.swift in Sources */,
+				6C550B112BC2AB8A004E9715 /* NotificationExtension.swift in Sources */,
 				6C9EA7112BB609FF00A8B14B /* AppDelegate.swift in Sources */,
+				6C550B152BC2B10D004E9715 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		6C9EA7162BB60A0100A8B14B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C9EA7172BB60A0100A8B14B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6C9EA71A2BB60A0100A8B14B /* Debug */ = {
@@ -273,15 +288,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Control Server/Control_Server.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BNNQH627DX;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Control other Apps";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,15 +316,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Control Server/Control_Server.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BNNQH627DX;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Control other Apps";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
