@@ -2,12 +2,12 @@
 //
 // Created by TeChris on 07.04.24.
 
-import Foundation
+import Cocoa
 
 struct Helper {
 	/// Execute one of the included scripts
-	static func executeScript(with name: String) {
-		guard let url = Bundle.main.url(forResource: name, withExtension: "script") else { fatalError("File Does not Exist") }
+	static func executeScript(_ script: String) {
+		guard let url = Bundle.main.url(forResource: script, withExtension: "script") else { fatalError("File Does not Exist") }
 		
 		var fileContent: String!
 		do {
@@ -61,5 +61,14 @@ struct Helper {
 		case DPadRight
 		case ShoulderLeft
 		case ShoulderRight
+	}
+	
+	
+	/// Get Accessibility Permission for SetupAction
+	static func requestAccessibilityPermission() {
+		if !AXIsProcessTrusted() {
+			let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeRetainedValue() as NSString: true]
+			let enabled = AXIsProcessTrustedWithOptions(options)
+		}
 	}
 }

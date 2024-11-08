@@ -1,8 +1,8 @@
 set curVolume to get volume settings
 set volume without output muted
 
+tell application "ScreenSaverEngine" to quit
+
 tell application "Music"
 	activate
 end tell
-
-tell application "ScreenSaverEngine" to quit

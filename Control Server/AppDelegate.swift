@@ -7,6 +7,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 	
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
+		Helper.requestAccessibilityPermission()
 		let reciever = Reciever.shared
 		reciever.start()
 	}

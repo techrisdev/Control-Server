@@ -1,0 +1,41 @@
+tell application "System Preferences"
+    reveal pane "Sound"
+end tell
+
+delay 1
+
+tell application "System Events"
+    -- Open the Sound output tab
+    click the pop-up button 2 of tab group 1 of window "Sound" of application process "System Preferences"
+    delay 0.5
+    
+    -- Select the AirPlay device
+    click menu item "Christopher" of menu 1 of pop-up button 2 of tab group 1 of window "Sound" of application process "System Preferences"
+end tell
+
+-- Step 2: Set volume to 10%
+set volume output volume 10 -- Set the volume to 10%
+
+-- Close System Preferences
+tell application "System Preferences" to quit
+
+
+tell application "Music"
+	activate
+	-- Play a playlist by name on shuffle
+	set playlistName to "🎀" -- Replace with your actual playlist name
+	set currentPlaylist to playlist playlistName
+	set shuffle to true
+	play currentPlaylist
+	delay 1
+	
+	tell application "System Events"
+		-- Set the app to Miniplayer mode
+		keystroke "m" using {option down, command down}
+		
+		delay 1 -- Wait for Music to switch to Miniplayer
+		
+		-- Simulate Command + Option + F to go fullscreen on the Miniplayer
+		keystroke "f" using {command down, shift down}
+	end tell
+end tell
